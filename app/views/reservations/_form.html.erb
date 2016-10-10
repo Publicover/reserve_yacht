@@ -1,0 +1,17 @@
+<%= form_for @reservation do |f| %>
+
+  <% if @reservation.errors.any? %>
+
+    <div id="error_explanation">
+      <p>
+        <%= pluralize(@reservation.errors.count, "error") %> prohibited
+        this article from being saved:
+      </p>
+      <% @reservation.errors.full_messages.each do |msg| %>
+        <li><center><%= msg %></li>
+      <% end %>
+    </div>
+
+  <% end %>
+
+<% end %>

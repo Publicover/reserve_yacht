@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prefix_one: MyString
+  f_name_one: MyString
+  l_name_one: MyString
+  prefix_two: MyString
+  f_name_two: MyString
+  l_name_two: MyString
+  full_company_name: MyString
+  title: MyString
+  mla_title: MyString
+  mailing_address: MyString
+  suite: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  work_phone: MyString
+  cell_phone: MyString
+  email_address: MyString
+  re_enter_email_address: MyString
+  supplier_guest_speaker: MyString
+  hotel_arrival: 2016-10-10
+  hotel_departure: 2016-10-10
+  room_type: false
+  special_needs: MyText
+  special_requests: MyText
+
+two:
+  prefix_one: MyString
+  f_name_one: MyString
+  l_name_one: MyString
+  prefix_two: MyString
+  f_name_two: MyString
+  l_name_two: MyString
+  full_company_name: MyString
+  title: MyString
+  mla_title: MyString
+  mailing_address: MyString
+  suite: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  work_phone: MyString
+  cell_phone: MyString
+  email_address: MyString
+  re_enter_email_address: MyString
+  supplier_guest_speaker: MyString
+  hotel_arrival: 2016-10-10
+  hotel_departure: 2016-10-10
+  room_type: false
+  special_needs: MyText
+  special_requests: MyText
