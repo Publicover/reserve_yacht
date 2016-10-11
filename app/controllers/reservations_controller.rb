@@ -47,7 +47,7 @@ class ReservationsController < ApplicationController
   private
 
     def reservation_params
-      params.require(:reservation).permit(:first_name_one, :first_name_two, :specialness)
+      params.require(:reservation).permit(:prefix_one, :f_name_one, :l_name_one, :prefix_two, :f_name_two, :l_name_two, :full_company_name, :title, :mla_title, :mailing_address, :suite, :city, :state, :zip, :work_phone, :cell_phone, :email_address, :re_enter_email_address, :supplier_guest_speaker, :hotel_arrival, :hotel_departure, :room_type, :special_needs, :special_request)
     end
 
 end

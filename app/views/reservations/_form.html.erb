@@ -14,4 +14,135 @@
 
   <% end %>
 
+  <p>
+    <strong><%= f.label :prefix_one %><br></strong>
+    <%= f.text_field :prefix_one %>
+  </p>
+
+  <p>
+    <strong><%= f.label :f_name_one %><br></strong>
+    <%= f.text_field :f_name_one %>
+  </p>
+
+  <p>
+    <strong><%= f.label :l_name_one %><br></strong>
+    <%= f.text_field :l_name_one %>
+  </p>
+
+  <p>
+    <strong><%= f.label :prefix_two %><br></strong>
+    <%= f.text_field :prefix_two %>
+  </p>
+
+  <p>
+    <strong><%= f.label :f_name_two %><br></strong>
+    <%= f.text_field :f_name_two %>
+  </p>
+
+  <p>
+    <strong><%= f.label :l_name_two %><br></strong>
+    <%= f.text_field :l_name_two %>
+  </p>
+
+  <p>
+    <strong><%= f.label :full_company_name %><br></strong>
+    <%= f.text_field :full_company_name %>
+  </p>
+
+  <p>
+    <strong><%= f.label :title %><br></strong>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <strong><%= f.label :mla_title %><br></strong>
+    <%= f.text_field :mla_title %>
+  </p>
+
+  <p>
+    <strong><%= f.label :mailing_address %><br></strong>
+    <%= f.text_field :mailing_address %>
+  </p>
+
+  <p>
+    <strong><%= f.label :suite %><br></strong>
+    <%= f.text_field :suite %>
+  </p>
+
+  <p>
+    <strong><%= f.label :city %><br></strong>
+    <%= f.text_field :city %>
+  </p>
+
+  <p>
+    <strong><%= f.label :state %><br></strong>
+    <%= f.text_field :state %>
+  </p>
+
+  <p>
+    <strong><%= f.label :zip %><br></strong>
+    <%= f.text_field :zip %>
+  </p>
+
+  <p>
+    <strong><%= f.label :work_phone %><br></strong>
+    <%= f.text_field :work_phone %>
+  </p>
+
+  <p>
+    <strong><%= f.label :cell_phone %><br></strong>
+    <%= f.text_field :cell_phone %>
+  </p>
+
+  <p>
+    <strong><%= f.label :email_address %><br></strong>
+    <%= f.text_field :email_address %>
+  </p>
+
+  <p>
+    <strong><%= f.label :re_enter_email_address %><br></strong>
+    <%= f.text_field :re_enter_email_address %>
+  </p>
+
+  <p>
+    <strong><%= f.label :supplier_guest_speaker %><br></strong>
+    <%= f.text_field :supplier_guest_speaker %>
+  </p>
+
+  <p>
+    <strong><%= f.label :hotel_arrival %><br></strong>
+    <%= f.date_select :hotel_arrival %>
+  </p>
+
+  <p>
+    <strong><%= f.label :hotel_departure %><br></strong>
+    <%= f.date_select :hotel_departure %>
+  </p>
+
+  Room Type: 1 or 2?
+
+  <p>
+    <%= f.label 'room_type_true', 'yup' %>
+    <%= f.radio_button :room_type, true %>
+  </p>
+
+  <p>
+    <%= f.label 'room_type_true', 'nah' %>
+    <%= f.radio_button :room_type, false %>
+  </p>
+
+  <p>
+    <strong><%= f.label :special_needs %><br></strong>
+    <%= f.text_field :special_needs %>
+  </p>
+
+  <p>
+    <strong><%= f.label :special_requests %><br></strong>
+    <%= f.text_field :special_requests %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
 <% end %>
