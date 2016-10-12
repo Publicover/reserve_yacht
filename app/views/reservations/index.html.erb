@@ -1,2 +1,58 @@
-<h1>Reservations#index</h1>
-<p>Find me in app/views/reservations/index.html.erb</p>
+<h1>ALL RESERVATIONS</h1>
+
+<table>
+  <tr>
+    <th>Prefix One</th>
+    <th>First Name One</th>
+    <th>Last Name One </th>
+    <th>Prefix Two </th>
+    <th>First Name Two </th>
+    <th>Last Name Two </th>
+    <th>Full Company Name </th>
+    <th>Title </th>
+    <th>MLA Title </th>
+    <th>Mailing Address </th>
+    <th>Suite </th>
+    <th>City </th>
+    <th>State </th>
+    <th>ZIP </th>
+    <th>Work Phone </th>
+    <th>Cell Phone </th>
+    <th>Email Address </th>
+    <th>Re-Enter Email Address </th>
+    <th>Supplier, Guest or Speaker </th>
+    <th>Hotel Arrival </th>
+    <th>Hotel Departure </th>
+    <th>Room Type </th>
+    <th>Special Needs?</th>
+    <th>Special Requests?</th>
+  </tr>
+
+  <% @reservations.each do |reservation| %>
+    <tr>
+      <td><%= reservation.prefix_one %></td>
+      <td><%= reservation.f_name_one %></td>
+      <td><%= reservation.l_name_one %></td>
+      <td><%= reservation.prefix_two %></td>
+      <td><%= reservation.f_name_two %></td>
+      <td><%= reservation.l_name_two %></td>
+      <td><%= reservation.full_company_name %></td>
+      <td><%= reservation.title %></td>
+      <td><%= reservation.mla_title %></td>
+      <td><%= reservation.mailing_address %></td>
+      <td><%= reservation.suite %></td>
+      <td><%= reservation.city %></td>
+      <td><%= reservation.state %></td>
+      <td><%= reservation.zip %></td>
+      <td><%= reservation.work_phone %></td>
+      <td><%= reservation.cell_phone %></td>
+      <td><%= reservation.re_enter_email_address %></td>
+      <td><%= reservation.supplier_guest_speaker %></td>
+      <td><%= reservation.hotel_arrival %></td>
+      <td><%= reservation.hotel_departure %></td>
+      <td><%= reservation.room_type %></td>
+      <td><%= reservation.special_needs %></td>
+      <td><%= reservation.special_requests %></td>
+    </tr>
+  <% end %>
+</table>

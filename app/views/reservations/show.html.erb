@@ -1,2 +1,31 @@
-<h1>Reservations#show</h1>
-<p>Find me in app/views/reservations/show.html.erb</p>
+<h1>Reservation ID# <%= "#{@reservation.id}" %></h1>
+
+<p>
+  <strong>Prefix</strong><br>
+  <%= @reservation.prefix_one %>
+</p>
+
+<p>
+  <strong>First Name</strong><br>
+  <%= @reservation.f_name_one %>
+</p>
+
+<p>
+  <strong>Last Name</strong><br>
+  <%= @reservation.l_name_one %>
+</p>
+
+<p>
+  <strong>Second Prefix</strong><br>
+  <%= @reservation.prefix_two %>
+</p>
+
+<p>
+  <strong>Second First Name</strong><br>
+  <%= @reservation.f_name_two %>
+</p>
+
+<p>
+  <strong>Second Last Name</strong><br>
+  <%= @reservation.l_name_two %>
+</p>
