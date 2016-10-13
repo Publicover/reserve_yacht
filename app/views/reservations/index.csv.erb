@@ -1,0 +1,5 @@
+<%= headers = ['First Name','Last Name'] %>
+<%= CSV.generate_line headers %>
+<%= @reservations.each do |reservation| %>
+<%= CSV.generate_line([reservation.f_name_one, reservation.l_name_two]) %>
+<% end %>
