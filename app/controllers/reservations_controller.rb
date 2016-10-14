@@ -1,16 +1,14 @@
-require 'csv'
-
 class ReservationsController < ApplicationController
 
   def index
     @reservations = Reservation.all
-    
+
     respond_to do |format|
       format.html
-      format.csv do
-        headers['Content-Disposition'] = "attachment; filename=\"user_list\""
-        headers['Content-Type'] ||= 'text/csv'
-      end
+      format.csv { send_data @reservations.to_csv } #do
+        # headers['Content-Disposition'] = "attachment; filename=\"user_list\""
+        # headers['Content-Type'] ||= 'text/csv'
+    #  end
     end
   end
 
