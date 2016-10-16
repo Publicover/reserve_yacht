@@ -63,6 +63,14 @@ body {
   width: 33.33%;
 }
 
+.col-1-10 {
+  width: 10%;
+}
+
+.col-8-10 {
+  width: 80%;
+}
+
 .grid:after {
   content: "";
   display: table;
